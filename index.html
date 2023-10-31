@@ -1,12 +1,154 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>WanderWise application</title>
+<title>WanderWise Fiki</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .collapsible-content {
+        display: none;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    .collapsible-title {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .arrow-down::before {
+        content: "\2B9F";
+        padding-right: 5px;
+    }
+
+    .arrow-up::before {
+        content: "\2B9D";
+        padding-right: 5px;
+    }
+
+    .collapsible-content {
+        display: none;
+    }
+</style>
 </head>
 <body>
+    <div class="chenar"></div>
+<ul>
+    <h1>WanderWise - Fiki Page</h1>
+    <li class="collapsible">
+        <div class="collapsible-title arrow-down"><strong>Echipa</strong></div>
+        <div class="collapsible-content">
+            <p>Echipa noastra este formata din:</p>
+            <ul>
+                <li>Bianca Matei
+                    <img src="">
+                    <p>bianca@gmail.com</p>
+                </li>
+                <li>Ana-Maria Buiciuc
+                    <img src="">
+                    <p>ana@gmail.com</p>
+                </li>
+                <li>Stefania Dina
+                    <img src="">
+                    <p>stefania@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+     </li>
+    <li class="collapsible">
+        <div class="collapsible-title arrow-down"><strong>Problemele existente</strong></div>
+        <div class="collapsible-content">
+            <p>Din dorinta de a planifica vacanta perfecta pentru noi, ne-am
+                confruntat cu lipsa unor aplicatii de traveling a caror
+                recomandari si optiuni nu s-au potrivit cu preferintele
+                si nevoilor noastre.
+            </p>
+        </div>
+    </div>
+    </li>
+    <li class="collapsible">
+        <div class="collapsible-title arrow-down"><strong>Solutia propusa</strong></div>
+        <div class="collapsible-content">
+            <p>Solutia propusa de noi este...</p>
+        </div>
+        </div>
+    </li>
+    <li class="collapsible">
+        <div class="collapsible-title arrow-down"><strong>Clientii targetati</strong></div>
+        <div class="collapsible-content">
+            <p>
+                Clientii targetati de noi sunt pasionatii de calatorii de orice varsta.
+            </p>
+        </div>
+        </div>
+    </li>
+    <li class="collapsible">
+        <div class="collapsible-title arrow-down"><strong>Competitia</strong></div>
+        <div class="collapsible-content">
+            <ul>
+                <li>TripAdvisor https://www.tripadvisor.com/</li>
+                <li>Lonely Planet https://www.lonelyplanet.com/</li>
+                <li>Google Trips https://www.google.com/travel/</li>
+            </ul>
+        </div>
+        </div>
+    </li>
+    <li class="collapsible">
+        <div class="collapsible-title arrow-down"><strong>Avantajele noastre</strong></div>
+        <div class="collapsible-content">
+            <p>Personalizare a experienței: O aplicație care înțelege personalitatea unui utilizator poate oferi recomandări mai precise și relevante. De exemplu, un aventurier poate primi sugestii pentru activități mai extreme sau explorare off-the-beaten-path, în timp ce un călător mai relaxat poate obține recomandări pentru spa-uri, restaurante liniștite etc.</p>
+            <p>Economisirea timpului: Cu o aplicație care cunoaște personalitatea utilizatorului, se pot oferi opțiuni de călătorie mai aliniate cu preferințele individuale, reducând astfel timpul petrecut în căutarea de informații diverse din surse multiple.</p>
+            <p>Reducerea stresului și a incertitudinii: Prin oferirea unor sugestii personalizate, o astfel de aplicație poate ajuta utilizatorii să se simtă mai încrezători în deciziile lor de călătorie și să reducă stresul legat de planificare.</p>
+            <p>Experiențe mai plăcute: O aplicație care se adaptează la personalitatea utilizatorilor poate contribui la crearea unor călătorii mai plăcute și satisfăcătoare, deoarece recomandările vor fi mai susceptibile să se potrivească preferințelor individuale.</p>
+        </div>
+    </li>
+    <li class="collapsible">
+        <div class="collapsible-title arrow-down"><strong>Metricele cheie </strong></div>
+        <div class="collapsible-content"></div>
+    </li>
+    <li class="collapsible">
+        <div class="collapsible-title arrow-down"><strong>Costuri</strong></div>
+        <div class="collapsible-content"></div>
+    </li>
+    <li class="collapsible">
+        <div class="collapsible-title arrow-down"><strong>Fluxuri de venituri</strong></div>
+        <div class="collapsible-content"></div>
+    </li>
+</ul>
 
-<h1>First Heading</h1>
-<p>First paragraph.</p>
+<script>
+     const collapsibleItems = document.querySelectorAll('.collapsible');
+     collapsibleItems.forEach(item => {
+         const title = item.querySelector('.collapsible-title');
+         const content = item.querySelector('.collapsible-content');
 
+         title.addEventListener('click', () => {
+             if (content.style.display === 'none') {
+                 content.style.display = 'block';
+                 title.classList.remove('arrow-down');
+                 title.classList.add('arrow-up');
+             } else {
+                 content.style.display = 'none';
+                 title.classList.remove('arrow-up');
+                 title.classList.add('arrow-down');
+             }
+         });
+     });
+</script>
 </body>
 </html>

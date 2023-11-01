@@ -11,7 +11,7 @@
         }
 
         .container {
-            max-width: 45%;
+            max-width: 55%;
             margin: 0 auto;
             background-color: rgba(255, 255, 255, 0.6);
             padding: 20px;
@@ -65,6 +65,27 @@
             bottom: 0;
         }
         
+        .team {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        }
+
+        .member {
+            width: 250px; /* Adjust the width as needed */
+            padding: 10px;
+            /* border: 1px solid #000; */
+            -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+            box-shadow: 5px 5px 15px 5px #000000;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 200px;
+        }
+        
     </style>
 </head>
 <body>
@@ -75,20 +96,26 @@
                 <div class="collapsible-title arrow-down"><strong>Echipa</strong></div>
                 <div class="collapsible-content">
                     <p>Echipa noastra este formata din:</p>
-                    <ul>
-                        <li>Bianca Matei
-                            <img src="">
-                            <p>bianca@gmail.com</p>
+                    <ul> <div class = "team">
+                        <li> <div class = "member">
+                            <img src="images/bianca.jpg">
+                            <p>Bianca Matei </p>
+                            <p>mateibiancae@gmail.com</p>
+                            </div>
                         </li>
-                        <li>Ana-Maria Buiciuc
-                            <img src="">
-                            <p>ana@gmail.com</p>
+                        <li> <div class = "member">
+                            <img src="images/ana2.jpg">
+                            <p>Ana-Maria Buiciuc</p>
+                            <p>ana_maria.buiciuc@stud.acs.upb.ro</p>
+                        </div>
                         </li>
-                        <li>Stefania Dina
-                            <img src="">
-                            <p>stefania@gmail.com</p>
+                        <li><div class = "member">
+                            <img src="images/stefania.jpg">
+                            <p>Stefania Dina</p>
+                            <p>stefaniadina10@gmail.com</p>
+                            </div>
                         </li>
-                    </ul>
+                    </div></ul>
                 </div>
                     </li>
 
@@ -96,17 +123,23 @@
                 <div class="collapsible-title arrow-down"><strong>Problemele existente</strong></div>
                 <div class="collapsible-content">
                     <p>Din dorinta de a planifica vacanta perfecta pentru noi, ne-am
-                        confruntat cu lipsa unor aplicatii de traveling a caror
-                        recomandari si optiuni nu s-au potrivit cu preferintele
-                        si nevoilor noastre.
+                        confruntat cu lipsa unor aplicatii de travel care sa se plieze pe tipul de activitati pe care il dorim. A fost nevoie sa consultam
+                        multiple surse, fapt ce a ingreunat si mai mult procesul de planificare al sejurului. Informatiile gasite au trebuit sa fie apoi centralizate, 
+                    filtrate, puse in ordine, lucru destul de neplacut intr-o astfel de situatie, in care scopul principal este relaxarea, nu intocmirea de liste.
                     </p>
+                    <p> Asa ca, ne-am pus urmatoarea intrebare: 
+                        <i>Suntem singurele persoane care se confrunta cu aceasta problema? </i></p>
                 </div>
                         </li>
 
             <li class="collapsible">
                 <div class="collapsible-title arrow-down"><strong>Solutia propusa</strong></div>
                 <div class="collapsible-content">
-                    <p>Solutia propusa de noi este...</p>
+                    <p>Solutia propusa de noi este o aplicatie menita sa ajute utilizatorii, prin personalizarea experientei lor, sa isi 
+                        petreaca o vacanta cat mai lipsita de stresul planificarii acesteia. Fiecare utilizator va avea 
+                        posibilitatea de a isi alege punctele de interes si o destinatie, iar rezultatele returnate cu activitati, locatii si alte atractii vor fi cele ce il vor interesa. Astfel, se va elimina problema 
+                        pierderii timpului, se va reduce stresul si, cel mai important, intreaga experienta va deveni una mult mai placuta.
+                    </p>
                 </div>
              </li>
 
@@ -114,7 +147,7 @@
                 <div class="collapsible-title arrow-down"><strong>Clientii targetati</strong></div>
                 <div class="collapsible-content">
                     <p>
-                        Clientii targetati de noi sunt pasionatii de calatorii de orice varsta.
+                        <i>Pasionatii de calatorii de orice varsta &#9786; </i>
                     </p>
                 </div>
             </li>
@@ -122,10 +155,16 @@
             <li class="collapsible">
                 <div class="collapsible-title arrow-down"><strong>Competitia</strong></div>
                 <div class="collapsible-content">
-                    <ul>
-                        <li>TripAdvisor https://www.tripadvisor.com/</li>
-                        <li>Lonely Planet https://www.lonelyplanet.com/</li>
-                        <li>Google Trips https://www.google.com/travel/</li>
+                    <ul> <div class="team">
+                        <li> <div class="member">TripAdvisor 
+                            <p>https://www.tripadvisor.com/</p></div></li>
+                        <li> <div class="member">
+                            Lonely Planet 
+                            <p>https://www.lonelyplanet.com/</p></div></li>
+                        <li> <div class="member">
+                            Google Trips 
+                            <p>https://www.google.com/travel/</p></div></li>
+                    </div>
                     </ul>
                 </div>
             </li>
@@ -133,24 +172,41 @@
             <li class="collapsible">
                 <div class="collapsible-title arrow-down"><strong>Avantajele noastre</strong></div>
                 <div class="collapsible-content">
-                    <p>Personalizare a experienței: O aplicație care înțelege personalitatea unui utilizator poate oferi recomandări mai precise și relevante. De exemplu, un aventurier poate primi sugestii pentru activități mai extreme sau explorare off-the-beaten-path, în timp ce un călător mai relaxat poate obține recomandări pentru spa-uri, restaurante liniștite etc.</p>
-                    <p>Economisirea timpului: Cu o aplicație care cunoaște personalitatea utilizatorului, se pot oferi opțiuni de călătorie mai aliniate cu preferințele individuale, reducând astfel timpul petrecut în căutarea de informații diverse din surse multiple.</p>
-                    <p>Reducerea stresului și a incertitudinii: Prin oferirea unor sugestii personalizate, o astfel de aplicație poate ajuta utilizatorii să se simtă mai încrezători în deciziile lor de călătorie și să reducă stresul legat de planificare.</p>
-                    <p>Experiențe mai plăcute: O aplicație care se adaptează la personalitatea utilizatorilor poate contribui la crearea unor călătorii mai plăcute și satisfăcătoare, deoarece recomandările vor fi mai susceptibile să se potrivească preferințelor individuale.</p>
+                    <ul>
+                    <li>Personalizarea experienței: O aplicație care înțelege personalitatea unui utilizator poate oferi recomandări mai precise și relevante. De exemplu, un aventurier poate primi sugestii pentru activități mai extreme sau explorare off-the-beaten-path, în timp ce un călător mai relaxat poate obține recomandări pentru spa-uri, restaurante liniștite etc.</li>
+                    <li>Economisirea timpului: Cu o aplicație care cunoaște personalitatea utilizatorului, se pot oferi opțiuni de călătorie mai aliniate cu preferințele individuale, reducând astfel timpul petrecut în căutarea de informații diverse din surse multiple.</li>
+                    <li>Reducerea stresului și a incertitudinii: Prin oferirea unor sugestii personalizate, o astfel de aplicație poate ajuta utilizatorii să se simtă mai încrezători în deciziile lor de călătorie și să reducă stresul legat de planificare.</li>
+                    <li>Experiențe mai plăcute: O aplicație care se adaptează la personalitatea utilizatorilor poate contribui la crearea unor călătorii mai plăcute și satisfăcătoare, deoarece recomandările vor fi mai susceptibile să se potrivească preferințelor individuale.</li>
+                </ul>
                 </div>
             </li>
 
             <li class="collapsible">
-                <div class="collapsible-title arrow-down"><strong>Metricele cheie </strong></div>
-                <div class="collapsible-content"></div>
+                <div class="collapsible-title arrow-down"><strong>Metrici</strong></div>
+                <div class="collapsible-content">
+                    Ne intereseaza metrici legate de satisfactia si implicarea utilizatorilor, cum ar fi: colectarea si studierea feedback-ului primit 
+                    de la utilizatori prin sondaje si recenzii in legatura cu satisfactia lor asupra aplicatiei si sugestii de imbunatatire, 
+                    masurarea timpului petrecut pe aplicatie, rata de creare a itenerariilor, rata de personalizare a itinerariilor, numarul 
+                    de inregistrari si autentificari pe aplicatie, numarul de abonamente platite, punctele in care utilizatorii renunta la a folosi 
+                    aplicatia.
+
+                </div>
             </li>
             <li class="collapsible">
                 <div class="collapsible-title arrow-down"><strong>Costuri</strong></div>
-                <div class="collapsible-content"></div>
+                <div class="collapsible-content">
+                    Costurile nu vor fi unele ridicate, se vor referi la cele aferente hostarii aplicatiei, licente pentru programe si 
+                    echipamente de lucru.
+                </div>
             </li>
             <li class="collapsible">
                 <div class="collapsible-title arrow-down"><strong>Fluxuri de venituri</strong></div>
-                <div class="collapsible-content"></div>
+                <div class="collapsible-content">
+                    Fiecare utilizator va avea posibiliatea de a-si genera un itinerariu cu rezultate personalizate free of charge. <b>Insa</b>, 
+                    daca acestia isi vor dori facilitati suplimentare, cum ar fi discount-uri la firme partenere, experienta ad-free, itinerarii care tin cont 
+                    de cele trecute, de exemplu pentru a nu repeta anumite atractii, program de loialitate ce adauga puncte in balanta utilizatorului, conectare la 
+                    ghizi locali, acces offline si multe altele.
+                </div>
             </li>
 
         </ul>
